@@ -18,7 +18,7 @@ resource "aws_eip" "ngw-eip" {
 # CREATES NAT GATEWAY TO EXPOSE THE PRIVATE NETWORK TO PRIVATE MACHINES
 resource "aws_nat_gateway" "ngw" {
   allocation_id = aws_eip.ngw-eip.id
-  subnet_id     = aws_subnet.public_subnet.id[0]
+  subnet_id     = aws_subnet.public_subnet.*.id[0]
 
   tags = {
     Name = "robot-${var.ENV}-ngw"
