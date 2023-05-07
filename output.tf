@@ -32,11 +32,11 @@ output "DEFAULT_VPC_CIDR" {
 
 
 output "PRIVATE_HOSTED_ZONE_ID" {
-    value =  module.vpc.PRIVATE_HOSTED_ZONE_ID
+    value =  module.vpc.Z01019823KGEEYKYEE9GQ
 }
 
 output "PRIVATE_HOSTED_ZONE_NAME" {
-    value = module.vpc.PRIVATE_HOSTED_ZONE_NAME
+    value = module.vpc.roboshop.internal
 }
 
 # output "PUBLIC_HOSTED_ZONE_ID" {
