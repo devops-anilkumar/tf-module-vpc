@@ -30,7 +30,6 @@ output "DEFAULT_VPC_CIDR" {
     value =  var.DEFAULT_VPC_CIDR
 }
 
-
 output "PRIVATE_HOSTED_ZONE_ID" {
     value =  module.vpc.PRIVATE_HOSTED_ZONE_ID
 }
